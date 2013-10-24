@@ -12,3 +12,13 @@ exports.indexJSON = function(req, res) {
     }
   })
 };
+
+exports.index = function(req, res) {
+  Rabbit.random(function(err, rabbit) {
+    if(err) {
+      res.send({ error: 'Something went wrong'});
+    } else {
+      res.render('index', { url: rabbit.url });
+    }
+  })
+};

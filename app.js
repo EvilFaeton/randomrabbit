@@ -31,6 +31,7 @@ if ('development' === app.get('env')) {
 }
 
 app.get('/rabbits/random.json', routes.indexJSON);
+app.get('/rabbits/random', routes.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
