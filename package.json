@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.3",
+    "jade": "*",
+    "less-middleware": "*",
+    "mongoose": "3.6.x",
+    "q": "0.9.x",
+    "tumblr.js": "0.0.4"
+  }
+}
