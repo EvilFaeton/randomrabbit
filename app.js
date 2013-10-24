@@ -11,8 +11,6 @@ var path = require('path');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/randomrabbit');
 
-require('./worker');
-
 var app = express();
 
 // all environments
