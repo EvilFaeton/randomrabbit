@@ -28,7 +28,7 @@ TumblerAdapter.prototype = {
             width: photo.original_size.width,
             height: photo.original_size.height
           },
-          date: img.timestamp
+          date: img.timestamp || img.featured_timestamp
         };
       });
       defer.resolve(images.filter(function(el) { return el; }));
